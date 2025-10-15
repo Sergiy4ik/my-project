@@ -1,0 +1,121 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./vite-promo.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+@import url('./footer.css');
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ms-input {
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    margin-top: 8px;
+    padding-left: 16px;
+}
+
+.ms-input:hover {
+    border: 1px solid #000;
+}
+
+.ms-input:focus {
+    outline: none;
+    border: 1px solid #4e75ff;
+}
+
+fieldset {
+    border-radius: 4px;
+    width: 360px;
+    height: 78px;
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+}
+
+fieldset:hover {
+    border: 1px solid #000;
+}
+
+legend {
+    text-align: left;
+    margin-left: 28px;
+}
+
+.form-ms-label {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.fulfilled-input {
+    border: 1px solid #757575;
+    border-radius: 14px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4e75ff;
+}
+
+.rejected-input {
+    border: 1px solid #757575;
+    border-radius: 14px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4e75ff;
+}
+
+.fieldset-label {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.submit-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    background-color: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin-top: 24px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #6c8cff;
+    outline: none;
+}
